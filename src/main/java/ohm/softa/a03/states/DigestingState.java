@@ -11,7 +11,7 @@ public class DigestingState extends State {
 
     private final int remainingWakeTime;
 
-    DigestingState(int duration, int remainingWakeTime) {
+    public DigestingState(int duration, int remainingWakeTime) {
         super(duration);
         this.remainingWakeTime = remainingWakeTime;
     }
