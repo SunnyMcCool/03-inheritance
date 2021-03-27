@@ -16,12 +16,14 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  */
 public class CatTest {
 
+	// Zeiteinheiten
 	private static final int Sleep = 10;
 	private static final int Awake = 15;
 	private static final int Digest = 10;
 
 	private Cat animal;
 
+	// Die Geburt von Horst
 	@BeforeEach
 	void setUp() {
 		animal = new Cat("Horst", Sleep, Awake, Digest);

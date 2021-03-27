@@ -4,11 +4,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public abstract class State {
+    // Logger logger;
     protected static final Logger logger = LogManager.getLogger();
 
     private int t = 0;
     private final int duration;
-    // Logger logger;
 
 
     public int getTime() {

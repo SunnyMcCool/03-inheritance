@@ -9,7 +9,7 @@ import ohm.softa.a03.State;
  */
 public class HungryState extends State {
 
-    public HungryState(boolean duration) {
+    public HungryState(int duration) {
         super(duration);
     }
 
