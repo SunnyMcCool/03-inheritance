@@ -30,6 +30,16 @@ public class CatTest {
 	}
 
 	@Test
+	void testLifeCounter() {
+		animal.toString();
+		animal.getLifes();
+		//Waiting while animal is sleeping and awake before it's going to die
+		IntStream.range(0, Sleep + Awake).forEach(i -> animal.tick());
+		animal.lifeCounter();
+		assertTrue(animal.isDead());
+	}
+
+	@Test
 	void testFeedHungryAnimal() {
 		IntStream.range(0, Sleep).forEach(i -> animal.tick());
 		assertTrue(animal.isHungry());

@@ -14,6 +14,9 @@ public class Cat {
 	private final int awake;
 	private final int digest;
 
+	// Die neun Leben einer Katze
+	private int lifes = 9;
+
 	private final String name;
 
 	public Cat(String name, int sleep, int awake, int digest) {
@@ -43,7 +46,19 @@ public class Cat {
 
 	@Override
 	public String toString() {
+		logger.info("Your cats name is "+ name + ".");
 		return name;
+	}
+
+	public int getLifes(){
+		logger.info("Your cat has " + lifes + " lifes.");
+		return lifes;
+	}
+
+	public int lifeCounter(){
+		lifes = lifes-1;
+		logger.info("Your cat has " + lifes + " lifes left.");
+		return lifes;
 	}
 
 	public int getSleeping() {
@@ -75,6 +90,6 @@ public class Cat {
 	}
 
 	public boolean isDead() {
-		return state instanceof DeadState;
+		return state instanceof DeathState;
 	}
 }

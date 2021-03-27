@@ -5,6 +5,7 @@ import ohm.softa.a03.states.SleepingState;
 public class DigestingState extends State{
     private final int remainingWakeTime;
 
+    // Why do we need a remaining WakeTime here but not in other states??
     protected DigestingState(int duration, int remainingWakeTime) {
         super(duration);
         this.remainingWakeTime = remainingWakeTime;

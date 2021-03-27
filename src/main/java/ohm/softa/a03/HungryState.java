@@ -10,14 +10,17 @@ public class HungryState extends State {
         super(duration);
     }
 
+    // Wenn Katze nicht gefüttert wird
     @Override
     public State successor(Cat cat) {
         logger.info("I've been starving for a too long time...");
         return new DeathState();
     }
 
+    // Wenn Katze gefüttert wird
     public State feed(Cat cat){
         logger.info("Om nom nom...");
+        // zwei Parameter notwendig
         return new DigestingState(cat.getDigest(), getDuration() - getTime());
     }
 }
