@@ -12,6 +12,7 @@ public class SleepingState extends State{
     public State successor(Cat cat) {
         logger.info("Grumble... I am hungry!");
         // State muss zurückgegeben werden
+        // Status wechselt zu hungrig, Katze wird wach
         return new HungryState(cat.getAwake());
     }
 }

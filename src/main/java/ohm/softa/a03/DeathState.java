@@ -10,7 +10,7 @@ public class DeathState extends State{
 
     @Override
     public State successor(Cat cat) {
-        // wird nicht angezeigt??
+        // wird nicht angezeigt?
         logger.info("It's over. Goodbye.");
         return this;
     }
