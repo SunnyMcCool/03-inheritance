@@ -1,8 +1,8 @@
 package ohm.softa.a03;
 
-import ohm.softa.a03.states.DeadState;
-import ohm.softa.a03.states.DigestingState;
-import ohm.softa.a03.states.SleepingState;
+import ohm.softa.a03.DeadState;
+import ohm.softa.a03.DigestingState;
+import ohm.softa.a03.SleepingState;
 
 public class HungryState extends State {
 

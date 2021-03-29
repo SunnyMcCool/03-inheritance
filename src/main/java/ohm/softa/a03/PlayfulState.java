@@ -1,6 +1,6 @@
 package ohm.softa.a03;
 
-import ohm.softa.a03.states.SleepingState;
+import ohm.softa.a03.SleepingState;
 
 public class PlayfulState extends State{
 

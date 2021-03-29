@@ -1,6 +1,12 @@
 package ohm.softa.a03;
 
-import ohm.softa.a03.states.*;
+import ohm.softa.a03.DeadState;
+import ohm.softa.a03.DigestingState;
+import ohm.softa.a03.HungryState;
+import ohm.softa.a03.PlayfulState;
+import ohm.softa.a03.SleepingState;
+
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

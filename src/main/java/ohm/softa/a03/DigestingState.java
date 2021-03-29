@@ -1,6 +1,6 @@
 package ohm.softa.a03;
 
-import ohm.softa.a03.states.SleepingState;
+import ohm.softa.a03.SleepingState;
 
 public class DigestingState extends State{
     // verbleibende Zeit bis Katze aufwacht
