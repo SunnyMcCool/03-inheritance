@@ -11,7 +11,7 @@ public class DeadState extends State{
     @Override
     public State successor(Cat cat) {
         // wird nicht angezeigt?
-        logger.warn("It's over. Goodbye.");
+        logger.info("It's over. Goodbye.");
         return this;
     }
 }
