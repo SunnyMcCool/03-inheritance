@@ -90,6 +90,6 @@ public class Cat {
 	}
 
 	public boolean isDead() {
-		return state instanceof DeathState;
+		return state instanceof DeadState;
 	}
 }

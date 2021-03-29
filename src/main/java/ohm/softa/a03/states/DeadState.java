@@ -9,7 +9,7 @@ import ohm.softa.a03.State;
  */
 public class DeadState extends State {
 
-    DeadState() {
+    public DeadState() {
         super(-1);
     }
 

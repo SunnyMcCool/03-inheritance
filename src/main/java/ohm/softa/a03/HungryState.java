@@ -17,7 +17,7 @@ public class HungryState extends State {
     public State successor(Cat cat) {
         logger.info("I've been starving for a too long time...");
         // Katze ist tot
-        return new DeathState();
+        return new DeadState();
     }
 
     // Wenn Katze gefüttert wird
