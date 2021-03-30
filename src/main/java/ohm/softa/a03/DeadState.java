@@ -4,9 +4,8 @@ public class DeadState extends State{
 
     // von Duration wird immer 1 abgezogen
     // Katze darf 15 mal Hunger-Status haben, bis sie stirbt
-    DeadState() {
-        super(-1);
-    }
+    DeadState() {super(-1);}
+    //DeadState() {super(2);}
 
     @Override
     public State successor(Cat cat) {

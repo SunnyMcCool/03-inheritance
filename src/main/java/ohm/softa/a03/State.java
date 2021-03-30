@@ -27,7 +27,6 @@ public abstract class State {
     final State tick(Cat cat) {
         // Negative Duration
         if(duration < 0)
-            // iterativer Aufruf
         	return this;
 
         // time goes by...
